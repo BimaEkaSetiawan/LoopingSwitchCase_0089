@@ -21,18 +21,32 @@ int main(){
         cout << "Pilihan (1/2/3) : ";
         cin >> pilihan;
 
+        
         switch (pilihan)
         {
         case 1:
             cout << "Menghitung Luas Persegi Panjang" <<endl;
-            cout << "Masukan Panjang : " <<endl;
+            cout << "Masukan Panjang : " ;
             cin >>Panjang;
-            cout << "Masukan Lebar : " <<endl;
+            cout << "Masukan Lebar : " ;
             cin >>Lebar;
             cout << "Luas Persegi Panjang" <<
              LuasPersegiPanjang(Panjang, Lebar) << endl;
              cout << endl;
             break;
+        case 2:
+        cout << "Menghitung Luas Lingkaran" <<endl;
+        cout << "Masukan jejari : ";
+        cin >> Jejari;
+        cout << "luas Lingkaran: " << LuasLingkaran(Jejari) <<endl;
+        cout <<endl;
+        break;
+        case 3:
+        break;
+        default :
+        cout << "Pilihan Anda Salah" <<endl;
+        cout <<endl;
         }
-    }
+    }while (pilihan !=3);
+  
 }
